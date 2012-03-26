@@ -13,6 +13,9 @@ alias gst="git status"
 alias gc="git commit -vm"
 alias gca="git commit -avm"
 
+#vim
+alias v="vim"
+
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
@@ -22,7 +25,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color)
-    PS1='[\[\033[01;32m\]\h\[\033[00m\]] \[\033[01;34m\]\W\[\033[00m\] \$ '
+    PS1='[\[\033[01;32m\]\u@\h\[\033[00m\]] \[\033[01;34m\]\W\[\033[00m\] \$ '
     ;;
 *)
     PS1='[\h] \W \$ '
