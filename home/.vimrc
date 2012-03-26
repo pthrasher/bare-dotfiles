@@ -14,7 +14,6 @@ set showmode
 set showcmd
 set hidden
 set visualbell
-set cursorline
 set ttyfast
 set number
 set laststatus=2
@@ -66,6 +65,8 @@ set virtualedit+=block
 set wildmenu
 set wildmode=list:longest
 
+set bg=dark
+colorscheme wombat256
 
 " Resize splits when the window is resized
 au VimResized * :wincmd =
@@ -143,6 +144,3 @@ set completeopt=longest,menuone,preview
 cnoremap w!! w !sudo tee % >/dev/null
 
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
-
-
-
